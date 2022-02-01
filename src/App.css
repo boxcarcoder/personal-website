@@ -1,16 +1,14 @@
+/*General Styles*/
+* {
+  font-family: Optima, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+    sans-serif;
+  font-size: 18px;
+  color: rgb(211, 210, 210);
+  background-color: #272e42;
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -24,15 +22,101 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  font-size: 75px;
+  padding: 0px;
+  margin: 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+h2 {
+  font-size: 30px;
+  margin: 0px;
+}
+
+li {
+  text-align: center;
+  list-style-position: inside;
+}
+
+ul {
+  text-align: center;
+  list-style-position: inside;
+}
+
+/*Landing Page styles*/
+
+.pronouns {
+  font-size: 10px;
+  padding-left: 20px;
+}
+
+.summary {
+  width: 850px;
+  margin: 30px auto 30px auto;
+  text-align: left;
+}
+
+.social {
+  border: solid;
+  border-radius: 30%;
+  border-color: rgb(103, 197, 103);
+
+  font-size: 20px;
+  padding: 7px 10px 7px 10px;
+  margin: 5px;
+}
+.social:hover {
+  padding: 12px 15px 12px 15px;
+}
+
+.socialGroup {
+  position: relative;
+
+  animation: move-social;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes move-social {
+  0% {
+    left: -100%;
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    left: 0%;
   }
+}
+
+.link {
+  margin: 10px;
+  padding: 5px;
+  border-radius: 10%;
+  text-decoration: none;
+}
+.link:hover {
+  background-color: rgb(103, 197, 103);
+  color: #272e42;
+  font-weight: bold;
+}
+
+.links {
+  position: relative;
+  margin: 50px;
+  animation: move-links;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes move-links {
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: 0%;
+  }
+}
+
+/*Reddalerts styles*/
+.reddalerts {
+  width: 850px;
+  margin: auto;
 }
