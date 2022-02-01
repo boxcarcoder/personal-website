@@ -34,14 +34,93 @@ h2 {
 }
 
 li {
-  text-align: center;
+  text-align: left;
   list-style-position: inside;
 }
 
 ul {
-  text-align: center;
+  text-align: left;
   list-style-position: inside;
 }
+
+a {
+  text-decoration: none;
+}
+
+.linkToProjectGroup {
+  margin: 20px;
+}
+
+.linkToProject {
+  padding: 5px 5px 5px 5px;
+  background-color: rgb(103, 197, 103);
+  border-radius: 5%;
+  color: #282c34;
+  text-decoration: none;
+  font-weight: bold;
+}
+.linkToProject:hover {
+  padding: 10px 10px 10px 10px;
+  border-radius: 5%;
+}
+
+.photo {
+  width: 700px;
+  height: 400px;
+}
+
+.slider {
+  width: 700px;
+  height: 420px;
+  display: flex; /*horizontal scrolling*/
+  margin: auto;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+.slide {
+  flex-shrink: 0;
+  height: 100%;
+  scroll-snap-align: start;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(226, 226, 226, 0.5);
+  /* box-shadow: 0 0 1px rgba(255, 255, 255, 0.5); */
+}
+
+.overview {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* position: relative;
+  animation: move-overview;
+  animation-duration: 3s;
+  animation-fill-mode: forwards; */
+}
+
+.technologyList {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  align-content: center;
+  align-items: center;
+}
+
+/* @keyframes move-overview {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: 10%;
+  }
+} */
 
 /*Landing Page styles*/
 
@@ -99,8 +178,8 @@ ul {
 }
 
 .links {
-  position: relative;
   margin: 50px;
+  position: relative;
   animation: move-links;
   animation-duration: 2s;
   animation-fill-mode: forwards;
@@ -117,6 +196,6 @@ ul {
 
 /*Reddalerts styles*/
 .reddalerts {
-  width: 850px;
+  width: 700px;
   margin: auto;
 }

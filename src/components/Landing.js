@@ -32,7 +32,7 @@ const Landing = () => {
         <p>I am a Software Engineer based in Los Angeles.</p>
         <p>
           <span style={{ color: 'rgb(103, 197, 103)' }}>
-            I've finally found where I belong.
+            I've finally found where I belong.{' '}
           </span>
           Looking back, I've felt like a journeyman, figuring out what drives me
           as a developer. Previously working on avionic software, I've been
