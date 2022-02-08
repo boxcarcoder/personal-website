@@ -65,44 +65,15 @@ a {
 }
 
 .photo {
-  width: 700px;
+  width: 70%;
   height: 400px;
 }
 
-.slider {
-  width: 700px;
-  height: 420px;
-  display: flex; /*horizontal scrolling*/
-  margin: auto;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-}
-.slide {
-  flex-shrink: 0;
-  height: 100%;
-  scroll-snap-align: start;
-}
-
-::-webkit-scrollbar {
-  -webkit-appearance: none;
-  width: 5px;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 4px;
-  background-color: rgba(226, 226, 226, 0.5);
-  /* box-shadow: 0 0 1px rgba(255, 255, 255, 0.5); */
-}
-
 .overview {
-  margin-top: 70px;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* position: relative;
-  animation: move-overview;
-  animation-duration: 3s;
-  animation-fill-mode: forwards; */
 }
 
 .technologyList {
@@ -113,14 +84,12 @@ a {
   align-items: center;
 }
 
-/* @keyframes move-overview {
-  0% {
-    top: 100%;
-  }
-  100% {
-    top: 10%;
-  }
-} */
+.profilePic {
+  border-radius: 10%;
+  margin: 30px;
+  height: 300px;
+  width: 340px;
+}
 
 /*Landing Page styles*/
 
@@ -194,8 +163,58 @@ a {
   }
 }
 
-/*Reddalerts styles*/
-.reddalerts {
+/* Projects page styles*/
+.projectsDisplay {
+  display: flex;
+  flex-direction: column;
+}
+
+.projectContainer {
   width: 700px;
   margin: auto;
+  margin-bottom: 100px;
+}
+
+/* Reddalerts styles */
+.reddalertsPhoto {
+  width: 700px;
+  height: 400px;
+}
+
+.reddalerts-slider {
+  width: 700px;
+  height: 420px;
+  display: flex; /*horizontal scrolling*/
+  margin: auto;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+.slide {
+  flex-shrink: 0;
+  height: 100%;
+  scroll-snap-align: start;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(226, 226, 226, 0.5);
+}
+
+/*ExplorersConnect page styles*/
+.explorers-slider {
+  width: 700px;
+  height: 570px;
+  display: flex; /*horizontal scrolling*/
+  margin: auto;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+.explorersPhoto {
+  width: 700px;
+  height: 550px;
 }

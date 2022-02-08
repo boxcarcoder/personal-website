@@ -6,6 +6,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Landing from './components/Landing';
 import About from './components/About';
 import Projects from './components/Projects';
+import Reddalerts from './components/Projects/Reddalerts';
+import ExplorersConnect from './components/Projects/ExplorersConnect';
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
           <Route path='/' element={<Landing />} />
           <Route path='about' element={<About />} />
           <Route path='projects' element={<Projects />} />
+          <Route path='reddalerts' element={<Reddalerts />} />
+          <Route path='explorersConnect' element={<ExplorersConnect />} />
         </Routes>
       </Router>
     </div>
