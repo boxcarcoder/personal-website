@@ -11,22 +11,30 @@ const About = () => {
       ></img>
 
       <div className='summary'>
-        <p>Don't mind the messy hair in my photo, it was a 7am hike.</p>
+        <p>Don't mind the messy hair, it was a 7am hike.</p>
         <p>
-          Outside of software development, I love enjoying the outdoors with
-          some hiking, car camping, and backpacking. Nothing can replace some
-          fresh air and exercise.
+          <span style={{ color: 'rgb(103, 197, 103)' }}>
+            Outside of software development
+          </span>
+          , I love enjoying the outdoors with some hiking, car camping, and
+          backpacking. Nothing can replace some fresh air and exercise.
         </p>
         <p>
-          I'm an avid music fan, listening from Indie Rock, Hip Hop, and EDM, to
-          Folk, Dream Pop, and Funk. I love a good music discussion, and
-          especially new recommendations. With practice, I'm aspiring to be a
-          blues and jazz improv guitar player.
+          <span style={{ color: 'rgb(103, 197, 103)' }}>
+            I'm an avid music fan
+          </span>
+          , listening from Indie Rock, Hip Hop, and EDM, to Folk, Dream Pop, and
+          Funk. I love a good music discussion, and especially new
+          recommendations. With practice, I'm aspiring to be a blues and jazz
+          improv guitar player.
         </p>
         <p>
-          I love hanging out with family and friends- from board game nights,
-          grabbing a quick drink, attending shows, and everything in between. A
-          good time's to be had with company for sure.
+          <span style={{ color: 'rgb(103, 197, 103)' }}>
+            I love hanging out with family and friends
+          </span>
+          - find me at board game nights, grabbing a quick drink, attending
+          shows, and everything in between. A good time's to be had with company
+          for sure.
         </p>
       </div>
     </Fragment>

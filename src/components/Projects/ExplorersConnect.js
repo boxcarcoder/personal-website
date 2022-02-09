@@ -27,7 +27,7 @@ const ExplorersConnect = () => {
             <li>Node.js</li>
             <ul>
               <li>npm</li>
-              <li>Express</li>
+              <li>Express Web Framework</li>
               <li>Mongoose</li>
             </ul>
             <li>MongoDB</li>
@@ -55,7 +55,7 @@ const ExplorersConnect = () => {
 
   return (
     <Fragment>
-      <div className='projectContainer'>
+      <div className='projectPageContainer'>
         <h2 style={{ color: ' rgb(103, 197, 103)' }}>ExplorersConnect</h2>
 
         <h3>
@@ -63,84 +63,93 @@ const ExplorersConnect = () => {
           outdoor locations, and interact with a community.
         </h3>
 
-        <div className='explorers-slider'>
-          <div className='slide'>
-            <img
-              src={require('../../images/explorers1.png')}
-              alt='landingPage'
-              className='explorersPhoto'
-            ></img>
+        <div className='sliderGroup'>
+          <p className='prev' style={{ marginRight: '10px' }}>
+            &#10094;{' '}
+          </p>
+          <div className='explorers-slider'>
+            <div className='slide'>
+              <img
+                src={require('../../images/explorers1.png')}
+                alt='landingPage'
+                className='explorersPhoto'
+              ></img>
+            </div>
+            <div className='slide'>
+              <img
+                src={require('../../images/explorers2.png')}
+                alt='signin'
+                className='explorersPhoto'
+              ></img>
+            </div>
+            <div className='slide'>
+              <img
+                src={require('../../images/explorers3.png')}
+                alt='createProfile1'
+                className='explorersPhoto'
+              ></img>
+            </div>
+            <div className='slide'>
+              <img
+                src={require('../../images/explorers4.png')}
+                alt='createProfile2'
+                className='explorersPhoto'
+              ></img>
+            </div>
+            <div className='slide'>
+              <img
+                src={require('../../images/explorers5.png')}
+                alt='addDestinations'
+                className='explorersPhoto'
+              ></img>
+            </div>
+            <div className='slide'>
+              <img
+                src={require('../../images/explorers6.png')}
+                alt='dashboard'
+                className='explorersPhoto'
+              ></img>
+            </div>
+            <div className='slide'>
+              <img
+                src={require('../../images/explorers7.png')}
+                alt='explorers'
+                className='explorersPhoto'
+              ></img>
+            </div>
+            <div className='slide'>
+              <img
+                src={require('../../images/explorers8.png')}
+                alt='explorersProfile1'
+                className='explorersPhoto'
+              ></img>
+            </div>
+            <div className='slide'>
+              <img
+                src={require('../../images/explorers9.png')}
+                alt='explorersProfile2'
+                className='explorersPhoto'
+              ></img>
+            </div>
+            <div className='slide'>
+              <img
+                src={require('../../images/explorers10.png')}
+                alt='posts'
+                className='explorersPhoto'
+              ></img>
+            </div>
+            <div className='slide'>
+              <img
+                src={require('../../images/explorers11.png')}
+                alt='comments'
+                className='explorersPhoto'
+              ></img>
+            </div>
           </div>
-          <div className='slide'>
-            <img
-              src={require('../../images/explorers2.png')}
-              alt='signin'
-              className='explorersPhoto'
-            ></img>
-          </div>
-          <div className='slide'>
-            <img
-              src={require('../../images/explorers3.png')}
-              alt='createProfile1'
-              className='explorersPhoto'
-            ></img>
-          </div>
-          <div className='slide'>
-            <img
-              src={require('../../images/explorers4.png')}
-              alt='createProfile2'
-              className='explorersPhoto'
-            ></img>
-          </div>
-          <div className='slide'>
-            <img
-              src={require('../../images/explorers5.png')}
-              alt='addDestinations'
-              className='explorersPhoto'
-            ></img>
-          </div>
-          <div className='slide'>
-            <img
-              src={require('../../images/explorers6.png')}
-              alt='dashboard'
-              className='explorersPhoto'
-            ></img>
-          </div>
-          <div className='slide'>
-            <img
-              src={require('../../images/explorers7.png')}
-              alt='explorers'
-              className='explorersPhoto'
-            ></img>
-          </div>
-          <div className='slide'>
-            <img
-              src={require('../../images/explorers8.png')}
-              alt='explorersProfile1'
-              className='explorersPhoto'
-            ></img>
-          </div>
-          <div className='slide'>
-            <img
-              src={require('../../images/explorers9.png')}
-              alt='explorersProfile2'
-              className='explorersPhoto'
-            ></img>
-          </div>
-          <div className='slide'>
-            <img
-              src={require('../../images/explorers10.png')}
-              alt='posts'
-              className='explorersPhoto'
-            ></img>
-          </div>
-          <div className='slide'>
-            <img
-              src={require('../../images/explorers11.png')}
-              alt='comments'
-              className='explorersPhoto'
-            ></img>
-          </div>
+          <p className='next' style={{ marginLeft: '10px' }}>
+            {' '}
+            &#10095;
+          </p>
         </div>
 
         <div className='linkToProjectGroup'>
