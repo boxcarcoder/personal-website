@@ -1,4 +1,5 @@
 import React, { Fragment, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const ExplorersConnect = () => {
   const [displayTech, toggleDisplayTech] = useState(false);
@@ -162,8 +163,10 @@ const ExplorersConnect = () => {
           </a>
         </div>
 
+        <hr style={{ width: '80%' }} />
+
         <div className='overview'>
-          <h3>Overview:</h3>
+          <h3 style={{ color: 'rgb(103, 197, 103)' }}>Overview:</h3>
           <ul>
             <li>
               Users can sign up to create a personalized profile, including
@@ -184,7 +187,7 @@ const ExplorersConnect = () => {
             <button
               type='input'
               onClick={() => toggleDisplayTech(!displayTech)}
-              style={{ margin: '15px' }}
+              style={{ margin: '15px', color: 'rgb(103, 197, 103)' }}
             >
               Developed With
             </button>
@@ -194,12 +197,22 @@ const ExplorersConnect = () => {
             <button
               type='input'
               onClick={() => toggleDisplayDeployment(!displayDeployment)}
+              style={{ margin: '15px', color: 'rgb(103, 197, 103)' }}
             >
               Deployed With
             </button>
 
             {displayDeploymentList()}
           </div>
+        </div>
+
+        <div className='linkGroup'>
+          <Link to='/projects' className='link'>
+            Projects
+          </Link>
+          <Link to='/about' className='link'>
+            About Me
+          </Link>
         </div>
       </div>
     </Fragment>

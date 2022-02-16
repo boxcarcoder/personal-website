@@ -9,6 +9,7 @@
 
 .App {
   text-align: center;
+  margin-bottom: 30px;
 }
 
 h1 {
@@ -30,6 +31,7 @@ li {
 ul {
   text-align: left;
   list-style-position: inside;
+  margin: 0px;
 }
 
 a {
@@ -48,15 +50,42 @@ a {
   align-items: center;
 }
 
-/* general styles */
-.summary {
-  width: 80%;
-  margin: 30px auto 30px auto;
-  text-align: left;
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid rgb(211, 210, 210);
+  margin: 1em auto;
+  margin-bottom: 0px;
+  padding: 0;
+  align-content: center;
+  width: 10%;
+}
+
+.link {
+  margin: 10px;
+  padding: 5px;
+  border-radius: 30%;
+  text-decoration: none;
+  color: rgb(103, 197, 103);
+}
+.link:hover {
+  background-color: rgb(103, 197, 103);
+  border-radius: 30%;
+  color: #272e42;
+  font-weight: bold;
+}
+.linkGroup {
+  position: relative;
+  animation: move-links;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  margin: 5px;
 }
 
 .linkToProjectGroup {
-  margin: 20px;
+  margin: 10px;
+  margin-bottom: 25px;
 }
 .linkToProject {
   padding: 5px 5px 5px 5px;
@@ -72,7 +101,6 @@ a {
 }
 
 .overview {
-  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -102,6 +130,7 @@ a {
   animation: move-social;
   animation-duration: 2s;
   animation-fill-mode: forwards;
+  margin: 35px;
 }
 
 @keyframes move-social {
@@ -111,26 +140,6 @@ a {
   100% {
     left: 0%;
   }
-}
-
-.link {
-  margin: 10px;
-  padding: 5px;
-  border-radius: 10%;
-  text-decoration: none;
-}
-.link:hover {
-  background-color: rgb(103, 197, 103);
-  color: #272e42;
-  font-weight: bold;
-}
-
-.links {
-  margin: 50px;
-  position: relative;
-  animation: move-links;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
 }
 
 @keyframes move-links {
@@ -143,13 +152,21 @@ a {
 }
 
 /* Projects page styles*/
-.projectsDisplay {
+.projectsGroup {
   display: flex;
   flex-direction: column;
+  margin: 0px 25px 25px 25px;
 }
 
 /* mobile styles */
 @media (max-width: 812px) {
+  /* landing page styles*/
+  .summary {
+    width: 80%;
+    margin: 30px auto 30px auto;
+    text-align: left;
+  }
+
   /* About Me styles */
   .profilePic {
     border-radius: 10%;
@@ -160,7 +177,6 @@ a {
   .projectPageContainer {
     width: 90%;
     margin: auto;
-    margin-bottom: 100px;
   }
 
   .technologyList {
@@ -169,6 +185,7 @@ a {
     width: 100%;
     align-content: center;
     align-items: center;
+    padding: 25px;
   }
 
   /* reddalerts styles */
@@ -200,18 +217,25 @@ a {
 
 /* desktop styles */
 @media (min-width: 813px) {
+  /* landing page styles*/
+  .summary {
+    width: 700px;
+    margin: 30px auto 30px auto;
+    text-align: left;
+  }
+
   /* About Me styles */
   .profilePic {
     border-radius: 10%;
     margin: 30px;
     width: 30%;
+    max-width: 350px;
   }
 
   /* general projects style */
   .projectPageContainer {
     width: 700px;
     margin: auto;
-    margin-bottom: 100px;
   }
 
   .technologyList {
@@ -220,6 +244,7 @@ a {
     width: 700px;
     align-content: center;
     align-items: center;
+    padding: 25px;
   }
 
   /* reddalerts styles */

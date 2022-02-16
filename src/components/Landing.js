@@ -90,7 +90,7 @@ const Landing = () => {
         </a>
       </div>
 
-      <div className='links'>
+      <div className='linkGroup'>
         <Link to='/about' className='link'>
           About Me
         </Link>

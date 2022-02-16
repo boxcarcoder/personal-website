@@ -1,14 +1,17 @@
 import React, { Fragment } from 'react';
+import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
     <Fragment>
-      <h2>About Me</h2>
+      <h2>I am Brendan!</h2>
       <img
         src={require('../images/me.png')}
         alt='me'
         className='profilePic'
       ></img>
+
+      <hr style={{ width: '5%', marginTop: '0px' }} />
 
       <div className='summary'>
         <p>Don't mind the messy hair, it was a 7am hike.</p>
@@ -36,6 +39,15 @@ const About = () => {
           shows, and everything in between. A good time's to be had with company
           for sure.
         </p>
+      </div>
+
+      <div className='linkGroup'>
+        <Link to='/' className='link'>
+          Back
+        </Link>
+        <Link to='/projects' className='link'>
+          Projects
+        </Link>
       </div>
     </Fragment>
   );

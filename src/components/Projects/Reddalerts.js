@@ -1,4 +1,5 @@
 import React, { Fragment, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Reddalerts = () => {
   const [displayTech, toggleDisplayTech] = useState(false);
@@ -132,8 +133,10 @@ const Reddalerts = () => {
           </a>
         </div>
 
+        <hr style={{ width: '80%' }} />
+
         <div className='overview'>
-          <h3>Overview:</h3>
+          <h3 style={{ color: 'rgb(103, 197, 103)' }}>Overview:</h3>
           <ul>
             <li>
               Users can register for an account, that will be associated with
@@ -154,7 +157,7 @@ const Reddalerts = () => {
             <button
               type='input'
               onClick={() => toggleDisplayTech(!displayTech)}
-              style={{ margin: '15px' }}
+              style={{ margin: '15px', color: 'rgb(103, 197, 103)' }}
             >
               Developed With
             </button>
@@ -164,12 +167,22 @@ const Reddalerts = () => {
             <button
               type='input'
               onClick={() => toggleDisplayDeployment(!displayDeployment)}
+              style={{ margin: '15px', color: 'rgb(103, 197, 103)' }}
             >
               Deployed With
             </button>
 
             {displayDeploymentList()}
           </div>
+        </div>
+
+        <div className='linkGroup'>
+          <Link to='/projects' className='link'>
+            Projects
+          </Link>
+          <Link to='/about' className='link'>
+            About Me
+          </Link>
         </div>
       </div>
     </Fragment>
